@@ -3,7 +3,7 @@ the following operations should be implemented using a function
 expression: addition, subtraction, multiplication, division, and remainder.
 Each function should accept at least two operands and at most three as
 inputs. The program should display the results of all operations. */
-
+console.log("it's run")
 function addition(x:number, y:number, z:number = 0) : number 
 { 
     return x + y + z 
