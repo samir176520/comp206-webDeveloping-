@@ -5,18 +5,17 @@ Each function should accept at least two operands and at most three as
 inputs. The program should display the results of all operations. */
 
 function addition(x:number, y:number, z:number = 0) : number 
-{
-    return x + y + z
+{ 
+    return x + y + z 
 }
 
-function subtraction(x:number, y:number, z:number = 0) : number 
-{
+const subtraction = function (x:number, y:number, z:number = 0) : number // anonymous funcion
+{ 
     return x - y - z
 }
-function multiplication(x:number, y:number, z:number = 1) : number 
-{
-    return x * y * z
-}
+
+const multiplication = (x:number, y:number, z:number = 1) : number => x * y * z // arrow function will return this expertion
+
 function division(x:number, y:number, z:number = 1) : number | void // union of number and void datatypes can return one of them
 {
     if (y == 0 || z == 0)
@@ -24,8 +23,8 @@ function division(x:number, y:number, z:number = 1) : number | void // union of 
     else
         return x / y / z ;
 }
-function remainder(x:number, y:number, z?:number) : number | void 
-{
+
+const remainder = (x:number, y:number, z?:number) : number | void => { // arrow but will excute block
     if (y == 0 || z == 0)
         console.log("cannot divide by zero")
     else if (z == undefined)
