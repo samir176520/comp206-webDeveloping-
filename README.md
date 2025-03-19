@@ -15,6 +15,8 @@ This repository contains my solutions for the lab assignments in the course **co
 
 ---
 
+---
+
 ## **Folder Structure**
 ```
 lab-solutions/
@@ -46,41 +48,48 @@ lab-solutions/
 ## **Working with TypeScript**
 To initialize, compile, and run TypeScript code, follow these steps:
 
-### **1. Initialize a TypeScript Project**
-- Install TypeScript globally (if not already installed):
+### **1. Initialize a Node.js Project**
+- Run the following command to create a `package.json` file:
   ```bash
-  npm install -g typescript
+  npm init
   ```
-- Initialize a new TypeScript project:
-  ```bash
-  tsc --init
-  ```
-  This creates a `tsconfig.json` file for TypeScript configuration.
 
-### **2. Compile TypeScript to JavaScript**
+### **2. Install TypeScript**
+- Install TypeScript as a development dependency:
+  ```bash
+  npm install typescript --save-dev
+  ```
+
+### **3. Initialize TypeScript Configuration**
+- Generate a `tsconfig.json` file:
+  ```bash
+  npx tsc --init
+  ```
+
+### **4. Compile TypeScript to JavaScript**
 - Compile a `.ts` file to `.js`:
   ```bash
-  tsc filename.ts
+  npx tsc filename.ts
   ```
 - Compile all `.ts` files in the project:
   ```bash
-  tsc
+  npx tsc
   ```
 
-### **3. Run the Compiled JavaScript**
+### **5. Run the Compiled JavaScript**
 - Use Node.js to run the compiled `.js` file:
   ```bash
   node filename.js
   ```
 
-### **4. Automate Compilation and Execution**
+### **6. Automate Compilation and Execution**
 - Install `ts-node` to run TypeScript files directly:
   ```bash
-  npm install -g ts-node
+  npm install ts-node --save-dev
   ```
 - Run a `.ts` file without manual compilation:
   ```bash
-  ts-node filename.ts
+  npx ts-node filename.ts
   ```
 
 ---
@@ -94,9 +103,9 @@ To initialize, compile, and run TypeScript code, follow these steps:
 ---
 
 ## **Contact**
-- **Name**: Samir Ahmed
+- **Name**: [Your Name]
 - **GitHub**: [samir176520](https://github.com/samir176520)
-- **Email**: [samir176520@gmail.com](mailto:samir176520@gmail.com)
+- **Email**: [Your Email Address]
 
 ---
 
