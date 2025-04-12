@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Welcom to greatest calculator has ever made !</h1>
+<!--two input feilds to enter numbers-->
+    <input type="text" id="fnumber" placeholder="Enter first number"> &nbsp;
+    <input type="text" id="snumber"> <span style="color: red;" id="error"></span> <br> <br>
+     <button id="btn">Calculat</button>
+     <table>
+        <tr style="background-color: burlywood;">
+            <td>operation</td>
+            <td>result</td>
+        </tr>
+        <tbody id="results"> <!--why to group html tags inside table-->
+
+        </tbody>
+
+     </table>
+<!--script should be after body rendering-->
+<script src="./index.js" type = "text/javascript"></script>
+</body>
+
+</html>

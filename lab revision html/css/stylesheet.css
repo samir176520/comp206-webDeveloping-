@@ -1,0 +1,53 @@
+* {
+ margin: 0;
+
+ box-sizing: border-box;
+}
+body {
+ margin-left: 50px;
+ margin-right: 50px;
+ background-color: #B6D0E2;
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 20px;
+ background-color:darkblue;
+ color: #fff;  
+ height:70px;    
+}
+.nav-links a {
+ color: #fff;    
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1.7em; 
+ font-size: 25px;
+/* change the pos of menu to the left*/  
+/*margin-right: 400px*/   
+}
+.menu li:hover {
+ background-color: #B6D0E2;
+ border-radius: 5px;
+ text-decoration: underline;
+}
+.menu li {
+ padding: 5px 14px;
+}
+
+.left {
+    padding-top: 0%;
+}
+
+table{
+    width: 100%;
+}
