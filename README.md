@@ -83,13 +83,13 @@ To initialize, compile, and run TypeScript code, follow these steps:
   ```
 
 ### **6. Automate Compilation and Execution**
-- Install `ts-node` to run TypeScript files directly:
+- Install `nodemon` to run TypeScript files automatic:
   ```bash
-  npm install ts-node --save-dev
+  npm install nodemon
   ```
 - Run a `.ts` file without manual compilation:
   ```bash
-  npx ts-node filename.ts
+  npx nodemon filename.ts
   ```
 
 ---
@@ -103,9 +103,9 @@ To initialize, compile, and run TypeScript code, follow these steps:
 ---
 
 ## **Contact**
-- **Name**: [Your Name]
+- **Name**: [Samir Ahmed]
 - **GitHub**: [samir176520](https://github.com/samir176520)
-- **Email**: [Your Email Address]
+- **Email**: [samir176520@gmail.com](mailto:samir176520@gmail.com)
 
 ---
 
