@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <h1>Login Validate</h1>
+        <label for="username">username: <br><input type="text" name="username" id="username" placeholder="enter your username... "><br><span id="uerror"></span></label> <br>
+        <label for="password">password: <br> <input type="password" name="password" id="password" placeholder="enter your password.."><br><span id="perror"></span></label><br>
+        <label for="semester"> semester Level: <br>
+            <select name="semester" id="semester">
+                <option value="" disabled>choose your semester... </option>
+                <option value="Level 1">Level 1</option>
+                <option value="Level 2">Level 2</option>
+                <option value="Level 3">Level 3</option>
+                <option value="Level 4">Level 4</option>
+                <option value="undergraduted">undergraduted</option>    
+            </select>
+            <br><span id="serror"></span>
+        </label> <br>
+        <label for="checkbox">
+            Course Taken: 
+            <label for="comp102"><input type="checkbox" name="comp102" id="comp102">comp102</label>
+            <label for="comp102"><input type="checkbox" name="math101" id="math101">math101</label>
+            <label for="comp102"><input type="checkbox" name="comp206" id="comp206">comp206</label>
+            <br><span id="cerror"></span>
+        </label> <br>
+        <label for="newletter"><input type="checkbox" name="newletter" id="newletter">Signup for new letter</label> <br>
+        <br><button type="submit"width="25 ">Register</button>
+    </form> 
+    <script src="./index.js"></script>
+</body>
+</html>
