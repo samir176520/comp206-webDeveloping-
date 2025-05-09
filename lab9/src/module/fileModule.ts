@@ -2,7 +2,7 @@
 // addnew user
 // loading users
 import fs from 'fs/promises'
-import { user } from './user'
+import { user } from '../user'
 import { join } from 'path'
 
 

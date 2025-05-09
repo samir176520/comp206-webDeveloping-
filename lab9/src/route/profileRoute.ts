@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { join } from 'path'
-import {user} from '../module/user'
+import {user} from '../user'
 import  session  from "express-session";
 
 
