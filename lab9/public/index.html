@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <div id="noLogin">
+        <h1>Welcom to the greatest Home page has ever made</h1>
+        <a href="/register.html">Register</a> | &nbsp; <a href="/login.html">Login</a> 
+    </div>
+    <h2 id="userWelcom" ></h2>
+</body>
+    <script>
+        fetch('/user') // asynic function return promise
+        .then((res) => res.json())
+        .then(({userName}) =>{
+            if(userName)
+            {
+                document.getElementById("noLogin").innerHTML = ""
+                document.getElementById("userWelcom").innerText = `Welcom ${userName}`
+            }
+        })
+    </script>
+
+</html>

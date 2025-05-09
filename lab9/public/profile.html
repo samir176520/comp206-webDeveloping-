@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <h1 id="warrning" > Hey Kiddy maybe you miss with a SPECTRE, Becareful Next time</h1>
+    
+    <h3 id="userName"></h3>
+    <h3 id="email"></h3>
+    <button hidden type="button" id="logout" >Logout</button>
+</body>
+<script>
+    fetch('/profile/user') // asencroynice
+    .then((res =>res.json())) // function to return json from respone
+    .then (({userName, email}) => {
+        console.log(`${userName}, ${email}`)
+        if (userName && email)
+        {
+            document.getElementById("warrning").innerText = ``
+            document.getElementById("userName").innerText = `User Name: ${userName}`
+            document.getElementById("email").innerText = `Email: ${email}`
+            document.getElementById("logout").hidden = false
+        }
+    })
+
+    document.getElementById("logout").addEventListener("click", () =>{
+        fetch("/profile", {method : 'delete'})
+        .then(res => {
+            if (res.ok)
+                window.location.href = '/login'
+            else
+                console.error("can't logout")
+        })
+        .catch(mes => console.error(mes))
+    } 
+    )
+</script>
+</html>
