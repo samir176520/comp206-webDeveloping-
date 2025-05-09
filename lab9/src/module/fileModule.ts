@@ -18,7 +18,7 @@ async function loadingData() {
 
     } catch (message)
     {
-        console.log(`Error: ${message}`)
+        console.error({message})
         data = []
     }
 }

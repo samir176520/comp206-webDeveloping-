@@ -1,0 +1,52 @@
+[
+    {
+        "userName": "samir",
+        "password": "1234",
+        "email": "sa@me.com"
+    },
+    {
+        "userName": "siiiii",
+        "password": "affja",
+        "email": "adhaf@me.org"
+    },
+    {
+        "userName": "siii",
+        "password": "affja",
+        "email": "adhaf@me.org"
+    },
+    {
+        "userName": "<script>alert(1)</script>",
+        "password": "1234",
+        "email": "me@me.com"
+    },
+    {
+        "userName": "<script>",
+        "password": "1234",
+        "email": "me@me.com"
+    },
+    {
+        "userName": "<img src=x onerror=\"alert('XSS')\">",
+        "password": "1234",
+        "email": "me@me.com"
+    },
+    {
+        "userName": "mesaafaf",
+        "password": "1234",
+        "email": "sdme@mfefe.com"
+    },
+    {
+        "userName": "<img src=x onerror=alert(1)><!--comment-->",
+        "password": "1234",
+        "email": "sa@me.com"
+    },
+    {
+        "userName": "<img src=x onerror=alert(SPECTRE was here)><!--comment-->",
+        "password": "1234",
+        "email": "sa@me.com"
+    },
+    {
+        "userName": "<img src=x onerror=alert(\"SPECTRE was here\")><!--comment-->",
+        "password": "1234",
+        "email": "sa@me.com"
+    }
+]
