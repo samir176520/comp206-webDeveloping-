@@ -13,6 +13,7 @@
     <h2 id="userWelcom" ></h2>
 </body>
     <script>
+        window.addEventListener("pageshow", () => {
         fetch('/user') // asynic function return promise
         .then((res) => res.json())
         .then(({userName}) =>{
@@ -22,6 +23,8 @@
                 document.getElementById("userWelcom").innerText = `Welcom ${userName}`
             }
         })
+        })
+
     </script>
 
 </html>
