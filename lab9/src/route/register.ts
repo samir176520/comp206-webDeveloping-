@@ -2,7 +2,7 @@ import { Router, Request, Response, response } from "express";
 import { join } from 'path';
 import { dataValid } from "../middleWare/dataValid";
 import {register} from '../module/registerchecking'
-import { request } from "http";
+
 
 const route = Router();
 

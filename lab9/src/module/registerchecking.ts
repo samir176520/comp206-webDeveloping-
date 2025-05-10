@@ -6,7 +6,7 @@ import { user } from "../user"
 
 export async function register(req: Request, res : Response) {
     const errors = validationResult(req)
-    if (errors)
+    if (!errors.isEmpty())
         res.status(400).json(errors)
     else
     {
